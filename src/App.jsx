@@ -1,9 +1,9 @@
 import Home from "./pages/home";
-import Profile from "./pages/Profile";
 import About from "./pages/About";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import store from "./redux/store";
-import { Provider } from 'react-redux';
+import { Provider } from "react-redux";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </Provider>
