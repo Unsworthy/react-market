@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Navbar from "../component/Navbar";
-import banner1 from "../assets/aemodir.jpg";
-import banner2 from "../assets/arxxys.jpg";
-import banner3 from "../assets/kuronami.jpg";
+import banner1 from "../assets/valooe.jpg";
+import banner2 from "../assets/valorun.jpg";
+import banner3 from "../assets/jett.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -25,8 +25,7 @@ const Home = () => {
     },
   ]);
 
-  const { product } = useSelector(root => root)
-
+  const { product } = useSelector((root) => root);
 
   const settings = {
     dots: true,
@@ -44,17 +43,15 @@ const Home = () => {
       <div className="container">
         <Slider {...settings}>
           {bannerData.map((banner, index) => (
-
             <img src={banner.Image} alt={banner.title} key={index} />
-
           ))}
         </Slider>
       </div>
       <div className="container">
         <div className="row">
-          {
-            product?.map((product, index) => (<CardProduct key={index} {...product} />))
-          }
+          {product?.map((product, index) => (
+            <CardProduct key={index} {...product} />
+          ))}
         </div>
       </div>
     </>

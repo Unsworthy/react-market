@@ -9,7 +9,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg bg-info">
         <div className="container-fluid">
-          <a className="navbar-brand text-muted" href="#">
+          <a className="navbar-brand text-muted" href="/">
             FALVORUM
           </a>
           <button
